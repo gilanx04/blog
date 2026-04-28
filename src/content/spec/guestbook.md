@@ -1,9 +1,8 @@
 ---
-title: "留言板"
-description: "在这里留下你的足迹"
+title: "Buku Tamu"
+description: "Tinggalkan pesan, saran, atau jejak kunjunganmu di sini."
 ---
 
-- 请保持友善和尊重，营造良好的交流氛围
-- 欢迎分享你的想法，也可以提出对网站的建议
-- 你的每一条留言都是对我最大的支持 ✨
-
+- Jaga percakapan tetap ramah dan saling menghormati.
+- Saran untuk blog ini sangat diterima.
+- Setiap pesan membantu saya memperbaiki situs ini.

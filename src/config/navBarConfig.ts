@@ -30,7 +30,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 	// 我的及其子菜单
 	links.push({
-		name: "我的",
+		name: "Profil",
 		url: "/my/",
 		icon: "material-symbols:person",
 		children: [
@@ -44,7 +44,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 	// 关于及其子菜单
 	links.push({
-		name: "关于",
+		name: "Info",
 		url: "/content/",
 		icon: "material-symbols:info",
 		children: [
@@ -58,7 +58,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 	// 自定义导航栏链接,并且支持多级菜单
 	links.push({
-		name: "链接",
+		name: "Tautan",
 		url: "/links/",
 		icon: "material-symbols:link",
 
@@ -66,21 +66,21 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		children: [
 			{
 				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
+				url: "https://github.com/gilanx04",
 				external: true,
 				icon: "fa7-brands:github",
 			},
 			{
-				name: "Gitee",
-				url: "https://gitee.com/CuteLeaf/Firefly",
+				name: "Email",
+				url: "mailto:gilanxcheetz@gmail.com",
 				external: true,
-				icon: "fa7-brands:gitee",
+				icon: "fa7-solid:envelope",
 			},
 			{
-				name: "QQ交流群",
-				url: "https://qm.qq.com/q/ZGsFa8qX2G",
+				name: "RSS",
+				url: "https://gilanx.pages.dev/rss.xml",
 				external: true,
-				icon: "fa7-brands:qq",
+				icon: "fa7-solid:rss",
 			},
 		],
 	});

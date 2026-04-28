@@ -50,14 +50,14 @@ export const spineModelConfig: SpineModelConfig = {
 		],
 		// 点击时随机显示的文字消息
 		clickMessages: [
-			"你好呀！我是流萤~",
-			"今天也要加油哦！✨",
-			"想要一起去看星空吗？🌟",
-			"记得要好好休息呢~",
-			"有什么想对我说的吗？💫",
-			"让我们一起探索未知的世界吧！🚀",
-			"每一颗星星都有自己的故事~⭐",
-			"希望能带给你温暖和快乐！💖",
+			"Halo, selamat datang!",
+			"Semoga harimu berjalan lancar. ✨",
+			"Mari jelajahi ide baru hari ini. 🌟",
+			"Jangan lupa istirahat sebentar.",
+			"Ada hal menarik yang ingin dibagikan?",
+			"Mari belajar dan bereksperimen bersama. 🚀",
+			"Setiap catatan punya ceritanya sendiri. ⭐",
+			"Semoga tulisan di sini bermanfaat. 💖",
 		],
 		// 文字显示时间（毫秒）
 		messageDisplayTime: 3000,
@@ -117,11 +117,11 @@ export const live2dModelConfig: Live2DModelConfig = {
 		enabled: true,
 		// 点击时随机显示的文字消息，motions 和 expressions 将从模型 JSON 文件中自动读取
 		clickMessages: [
-			"你好！我是Miku~",
-			"有什么需要帮助的吗？",
-			"今天天气真不错呢！",
-			"要不要一起玩游戏？",
-			"记得按时休息哦！",
+			"Halo, selamat datang!",
+			"Ada yang bisa dibantu?",
+			"Semoga cuaca dan harimu menyenangkan.",
+			"Mau membaca tulisan terbaru?",
+			"Jangan lupa beristirahat.",
 		],
 		// 随机显示的文字消息显示时间（毫秒）
 		messageDisplayTime: 3000,
