@@ -1,0 +1,109 @@
+backend:
+  name: github
+  repo: gilanx04/blog
+  branch: main
+
+local_backend: true
+
+media_folder: src/content/posts
+public_folder: .
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: src/content/posts
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: "."
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} - {{published}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Published
+        name: published
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Updated
+        name: updated
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        required: false
+      - label: Description
+        name: description
+        widget: text
+        required: false
+      - label: Cover Image
+        name: image
+        widget: image
+        required: false
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Category
+        name: category
+        widget: string
+        required: false
+      - label: Language
+        name: lang
+        widget: select
+        required: false
+        options:
+          - { label: Default, value: "" }
+          - { label: English, value: en }
+          - { label: Simplified Chinese, value: zh_CN }
+          - { label: Traditional Chinese, value: zh_TW }
+          - { label: Japanese, value: ja }
+          - { label: Russian, value: ru }
+      - label: Author
+        name: author
+        widget: string
+        required: false
+      - label: Source Link
+        name: sourceLink
+        widget: string
+        required: false
+      - label: License Name
+        name: licenseName
+        widget: string
+        required: false
+      - label: License URL
+        name: licenseUrl
+        widget: string
+        required: false
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: false
+        required: false
+      - label: Pinned
+        name: pinned
+        widget: boolean
+        default: false
+        required: false
+      - label: Comments
+        name: comment
+        widget: boolean
+        default: true
+        required: false
+      - label: Password
+        name: password
+        widget: string
+        required: false
+      - label: Password Hint
+        name: passwordHint
+        widget: string
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
