@@ -1,0 +1,46 @@
+backend:
+  name: github
+  repo: gilanx04/blog
+  branch: main
+
+local_backend: true
+
+media_folder: src/assets/uploads
+public_folder: ../../assets/uploads
+
+collections:
+  - name: blog
+    label: Blog
+    folder: src/content/blog
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} - {{pubDate}}"
+    fields:
+      - label: Judul
+        name: title
+        widget: string
+      - label: Deskripsi
+        name: description
+        widget: text
+      - label: Tanggal Publish
+        name: pubDate
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Tanggal Update
+        name: updatedDate
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        required: false
+      - label: Gambar Hero
+        name: heroImage
+        widget: image
+        required: false
+      - label: Konten
+        name: body
+        widget: markdown
