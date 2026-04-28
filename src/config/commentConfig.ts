@@ -8,7 +8,7 @@ export const commentConfig: CommentConfig = {
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
 		// 设置 Twikoo 评论系统语言
-		lang: "zh-CN",
+		lang: "id",
 		// 是否启用文章访问量统计功能
 		visitorCount: true,
 	},
@@ -18,7 +18,7 @@ export const commentConfig: CommentConfig = {
 		// waline 后端服务地址
 		serverURL: "https://waline.vercel.app",
 		// 设置 Waline 评论系统语言
-		lang: "zh-CN",
+		lang: "id",
 		// 设置 Waline 评论系统表情地址
 		emoji: [
 			"https://unpkg.com/@waline/emojis@1.4.0/weibo",
@@ -39,7 +39,7 @@ export const commentConfig: CommentConfig = {
 		// artalk后端程序 API 地址
 		server: "https://artalk.example.com/",
 		// 设置 Artalk 语言
-		locale: "zh-CN",
+		locale: "id",
 		// 是否启用文章访问量统计功能
 		visitorCount: true,
 	},
@@ -65,7 +65,7 @@ export const commentConfig: CommentConfig = {
 		// 获取 Giscus 评论系统输入位置
 		inputPosition: "top",
 		// 获取 Giscus 评论系统语言
-		lang: "zh-CN",
+		lang: "id",
 		// 获取 Giscus 评论系统加载方式
 		loading: "lazy",
 	},
