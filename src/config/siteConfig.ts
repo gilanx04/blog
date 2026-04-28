@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Catatan pribadi dan tulisan teknis",
 
 	// 站点 URL
-	site_url: "https://gilanx04.github.io/blog",
+	site_url: "https://gilanx.pages.dev",
 
 	// 站点描述
 	description:
