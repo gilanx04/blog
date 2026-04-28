@@ -2,6 +2,7 @@
 title: Halo, Ini Blog Gilang
 published: 2026-04-29
 description: Tulisan pembuka buat blog pribadi yang dibangun dengan Astro dan Firefly.
+image: gilanx-cheetz.png
 tags:
   - Blog
   - Astro
