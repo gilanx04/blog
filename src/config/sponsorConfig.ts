@@ -9,7 +9,7 @@ export const sponsorConfig: SponsorConfig = {
 
 	// 赞助用途说明
 	usage:
-		"Dukungan akan digunakan untuk perawatan situs, pembuatan konten, dan pengembangan fitur blog.",
+		"Dukungan akan saya pakai buat merawat situs, menulis konten, dan ngoprek fitur blog.",
 
 	// 是否显示赞助者列表
 	showSponsorsList: true,
@@ -28,7 +28,7 @@ export const sponsorConfig: SponsorConfig = {
 			// 收款码图片路径（需要放在 public 目录下）
 			qrCode: "/assets/images/sponsor/alipay.png",
 			link: "",
-			description: "Scan kode QR Alipay untuk mendukung blog.",
+			description: "Scan kode QR Alipay kalau ingin ikut mendukung blog ini.",
 			enabled: false,
 		},
 		{
@@ -36,7 +36,7 @@ export const sponsorConfig: SponsorConfig = {
 			icon: "fa7-brands:weixin",
 			qrCode: "/assets/images/sponsor/wechat.png",
 			link: "",
-			description: "Scan kode QR WeChat Pay untuk mendukung blog.",
+			description: "Scan kode QR WeChat Pay kalau ingin ikut mendukung blog ini.",
 			enabled: false,
 		},
 		{
@@ -44,7 +44,7 @@ export const sponsorConfig: SponsorConfig = {
 			icon: "simple-icons:kofi",
 			qrCode: "",
 			link: "",
-			description: "Dukung blog melalui Ko-fi.",
+			description: "Dukung blog lewat Ko-fi.",
 			enabled: false,
 		},
 		{
@@ -52,7 +52,7 @@ export const sponsorConfig: SponsorConfig = {
 			icon: "simple-icons:afdian",
 			qrCode: "",
 			link: "",
-			description: "Dukung blog melalui Afdian.",
+			description: "Dukung blog lewat Afdian.",
 			enabled: false,
 		},
 	],

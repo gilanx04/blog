@@ -1,21 +1,21 @@
 ---
-title: "Selamat Datang di Blog Gilang"
+title: "Halo, Ini Blog Gilang"
 published: 2026-04-29
-description: "Catatan pembuka untuk blog pribadi berbasis Astro dan Firefly."
+description: "Tulisan pembuka buat blog pribadi yang dibangun dengan Astro dan Firefly."
 tags: ["Blog", "Astro", "Catatan"]
 category: "Catatan"
 draft: false
 ---
 
-Halo, selamat datang di blog saya.
+Halo, selamat datang.
 
-Situs ini saya gunakan untuk menulis catatan pribadi, dokumentasi teknis, dan hal-hal yang sedang saya pelajari. Untuk saat ini, saya sedang merapikan struktur blog, tampilan, bahasa, komentar, dan integrasi CMS agar lebih nyaman dipakai dalam jangka panjang.
+Blog ini saya pakai buat nyimpan catatan pribadi, dokumentasi kecil, dan hal-hal yang lagi saya pelajari. Sekarang saya masih merapikan struktur, tampilan, bahasa, komentar, dan integrasi CMS supaya lebih enak dipakai ke depannya.
 
-Beberapa topik yang akan saya tulis:
+Nantinya, isi blog ini mungkin banyak membahas:
 
 - Pengembangan web
-- Catatan belajar
+- Catatan belajar harian
 - Eksperimen dengan Astro dan Cloudflare Pages
-- Dokumentasi singkat dari hal yang saya kerjakan
+- Dokumentasi singkat dari hal yang sedang saya kerjakan
 
-Terima kasih sudah mampir.
+Makasih sudah mampir.

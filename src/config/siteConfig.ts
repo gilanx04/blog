@@ -10,14 +10,14 @@ export const siteConfig: SiteConfig = {
 	title: "Blog Gilang",
 
 	// 站点副标题
-	subtitle: "Catatan pribadi dan tulisan teknis",
+	subtitle: "Catatan santai soal web, belajar, dan hal yang lagi dikerjakan",
 
 	// 站点 URL
 	site_url: "https://gilanx.pages.dev",
 
 	// 站点描述
 	description:
-		"Blog pribadi berbasis Astro dan tema Firefly untuk menulis catatan, ide, dan dokumentasi teknis.",
+		"Blog pribadi buat nyimpan catatan, ide, dan dokumentasi kecil seputar web dan hal yang lagi saya pelajari.",
 
 	// 站点关键词
 	keywords: [

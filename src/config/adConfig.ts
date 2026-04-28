@@ -41,9 +41,9 @@ export const adConfig1: AdConfig = {
 
 // 广告配置2 - 完整内容广告
 export const adConfig2: AdConfig = {
-	title: "Dukung Blog",
+	title: "Dukung blog ini",
 	content:
-		"Jika tulisan di blog ini bermanfaat, dukunganmu membantu saya terus menulis dan merawat situs ini.",
+		"Kalau tulisan di sini terasa berguna, dukunganmu bisa bantu saya terus nulis dan merawat blog ini.",
 	image: {
 		src: "assets/images/cover.avif",
 		alt: "Dukung blog",
@@ -51,7 +51,7 @@ export const adConfig2: AdConfig = {
 		external: false,
 	},
 	link: {
-		text: "Dukung",
+		text: "Dukung sekarang",
 		url: "about/",
 		external: false,
 	},

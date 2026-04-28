@@ -1,23 +1,23 @@
 # Tentang Saya
 
-Halo, saya **Gilang**. Blog ini saya gunakan untuk menyimpan catatan pribadi, eksperimen, dan tulisan teknis yang ingin saya rapikan agar mudah dibaca kembali.
+Halo, saya **Gilang**. Blog ini jadi tempat saya nyimpan catatan, eksperimen, dan tulisan ngoprek biar gampang dicari lagi nanti.
 
 ## Tentang Blog Ini
 
-Situs ini dibangun dengan **Astro** dan menggunakan tema **Firefly**. Fokusnya sederhana: menjadi tempat menulis yang cepat, ringan, dan nyaman dibaca.
+Situs ini dibangun dengan **Astro** dan memakai tema **Firefly**. Tujuannya sederhana: tempat nulis yang cepat, ringan, dan nyaman dibaca.
 
-Topik yang mungkin muncul di sini:
+Topik yang kemungkinan sering muncul:
 
 - Pengembangan web
 - Catatan belajar
 - Dokumentasi teknis
-- Ide dan pengalaman pribadi
+- Ide kecil dan pengalaman pribadi
 
 ## Kontak
 
-Kamu bisa menghubungi saya lewat:
+Kalau ingin ngobrol atau kirim saran, bisa lewat:
 
 - **GitHub**: [gilanx04](https://github.com/gilanx04)
 - **Email**: [gilanxcheetz@gmail.com](mailto:gilanxcheetz@gmail.com)
 
-Terima kasih sudah berkunjung.
+Makasih sudah mampir.

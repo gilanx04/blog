@@ -10,8 +10,8 @@ public_folder: .
 
 collections:
   - name: posts
-    label: Posts
-    label_singular: Post
+    label: Tulisan
+    label_singular: Tulisan
     folder: src/content/posts
     path: "{{slug}}/index"
     media_folder: ""
@@ -22,76 +22,73 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}} - {{published}}"
     fields:
-      - label: Title
+      - label: Judul
         name: title
         widget: string
-      - label: Published
+      - label: Tanggal terbit
         name: published
         widget: datetime
         format: YYYY-MM-DD
         date_format: YYYY-MM-DD
         time_format: false
-      - label: Updated
+      - label: Terakhir diubah
         name: updated
         widget: datetime
         format: YYYY-MM-DD
         date_format: YYYY-MM-DD
         time_format: false
         required: false
-      - label: Description
+      - label: Ringkasan
         name: description
         widget: text
         required: false
-      - label: Cover Image
+      - label: Gambar sampul
         name: image
         widget: image
         required: false
-      - label: Tags
+      - label: Tag
         name: tags
         widget: list
         required: false
-      - label: Category
+      - label: Kategori
         name: category
         widget: string
         required: false
-      - label: Language
+      - label: Bahasa
         name: lang
         widget: select
         required: false
         options:
-          - { label: Default, value: "" }
-          - { label: English, value: en }
-          - { label: Simplified Chinese, value: zh_CN }
-          - { label: Traditional Chinese, value: zh_TW }
-          - { label: Japanese, value: ja }
-          - { label: Russian, value: ru }
-      - label: Author
+          - { label: Ikuti bahasa situs, value: "" }
+          - { label: Indonesia, value: id }
+          - { label: Inggris, value: en }
+      - label: Penulis
         name: author
         widget: string
         required: false
-      - label: Source Link
+      - label: Link sumber
         name: sourceLink
         widget: string
         required: false
-      - label: License Name
+      - label: Nama lisensi
         name: licenseName
         widget: string
         required: false
-      - label: License URL
+      - label: URL lisensi
         name: licenseUrl
         widget: string
         required: false
-      - label: Draft
+      - label: Simpan sebagai draft
         name: draft
         widget: boolean
         default: false
         required: false
-      - label: Pinned
+      - label: Sematkan tulisan
         name: pinned
         widget: boolean
         default: false
         required: false
-      - label: Comments
+      - label: Aktifkan komentar
         name: comment
         widget: boolean
         default: true
@@ -100,10 +97,10 @@ collections:
         name: password
         widget: string
         required: false
-      - label: Password Hint
+      - label: Petunjuk password
         name: passwordHint
         widget: string
         required: false
-      - label: Body
+      - label: Isi tulisan
         name: body
         widget: markdown

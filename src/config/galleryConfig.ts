@@ -16,7 +16,7 @@ export const galleryConfig: GalleryConfig = {
 		{
 			id: "firefly-2026",
 			name: "Galeri Firefly",
-			description: "Kumpulan gambar bawaan dari tema Firefly.",
+			description: "Beberapa gambar bawaan dari tema Firefly.",
 			location: "Galeri Blog",
 			date: "2026-01-01",
 			tags: ["Firefly", "Galeri"],

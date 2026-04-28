@@ -26,7 +26,7 @@ export const friendsConfig: FriendLink[] = [
 		title: "Firefly",
 		imgurl:
 			"https://weavatar.com/avatar/d252655d40d6874417a720bad0a6c5f77f8f6a1fd2f882f8f338402dc37e4190?s=640",
-		desc: "Tema Astro yang digunakan sebagai dasar blog ini.",
+		desc: "Tema Astro yang jadi dasar tampilan blog ini.",
 		siteurl: "https://blog.cuteleaf.cn",
 		tags: ["Blog"],
 		weight: 10, // 权重，数字越大排序越靠前
@@ -35,7 +35,7 @@ export const friendsConfig: FriendLink[] = [
 	{
 		title: "Firefly Docs",
 		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
-		desc: "Dokumentasi tema Firefly.",
+		desc: "Dokumentasi resmi buat tema Firefly.",
 		siteurl: "https://docs-firefly.cuteleaf.cn",
 		tags: ["Docs"],
 		weight: 9,
@@ -44,7 +44,7 @@ export const friendsConfig: FriendLink[] = [
 	{
 		title: "Astro",
 		imgurl: "https://avatars.githubusercontent.com/u/44914786?v=4&s=640",
-		desc: "The web framework for content-driven websites. ⭐️ Star to support our work!",
+		desc: "Framework web yang enak dipakai buat situs berbasis konten.",
 		siteurl: "https://github.com/withastro/astro",
 		tags: ["Framework"],
 		weight: 8,

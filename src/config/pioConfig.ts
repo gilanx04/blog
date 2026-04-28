@@ -50,14 +50,14 @@ export const spineModelConfig: SpineModelConfig = {
 		],
 		// 点击时随机显示的文字消息
 		clickMessages: [
-			"Halo, selamat datang!",
-			"Semoga harimu berjalan lancar. ✨",
-			"Mari jelajahi ide baru hari ini. 🌟",
+			"Halo, mampir juga akhirnya!",
+			"Semoga harimu lancar, ya. ✨",
+			"Yuk, cari ide baru hari ini. 🌟",
 			"Jangan lupa istirahat sebentar.",
-			"Ada hal menarik yang ingin dibagikan?",
-			"Mari belajar dan bereksperimen bersama. 🚀",
-			"Setiap catatan punya ceritanya sendiri. ⭐",
-			"Semoga tulisan di sini bermanfaat. 💖",
+			"Ada hal menarik yang mau dibahas?",
+			"Yuk belajar dan ngoprek bareng. 🚀",
+			"Setiap catatan pasti punya cerita. ⭐",
+			"Semoga tulisan di sini kepakai. 💖",
 		],
 		// 文字显示时间（毫秒）
 		messageDisplayTime: 3000,
@@ -119,8 +119,8 @@ export const live2dModelConfig: Live2DModelConfig = {
 		clickMessages: [
 			"Halo, selamat datang!",
 			"Ada yang bisa dibantu?",
-			"Semoga cuaca dan harimu menyenangkan.",
-			"Mau membaca tulisan terbaru?",
+			"Semoga harimu enak.",
+			"Mau baca tulisan terbaru?",
 			"Jangan lupa beristirahat.",
 		],
 		// 随机显示的文字消息显示时间（毫秒）
