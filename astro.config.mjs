@@ -186,6 +186,9 @@ export default defineConfig({
 				if (pathname === "/gallery/" && !siteConfig.pages.gallery) {
 					return false;
 				}
+				if (pathname === "/admin/" || pathname === "/search/") {
+					return false;
+				}
 
 				return true;
 			},
