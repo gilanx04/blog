@@ -103,15 +103,15 @@ Ikuti instruksi yang muncul. Setup awal biasanya cuma beberapa pertanyaan dasar.
 
 Kalau sudah lewat tahap ini tanpa error, berarti Hermes Agent sudah siap dipakai.
 
-## Catatan kecil biar tidak kejebak error yang sama
+> [!NOTE] Catatan kecil biar tidak kejebak error yang sama
 
-Saya tambahkan ini karena biasanya orang mentok di titik yang mirip.
+>Saya tambahkan ini karena biasanya orang mentok di titik yang mirip.
 
-Pertama, salah sumber Termux. Ini paling sering. Sudah capek debug, ternyata akar masalahnya dari aplikasi awal.
+>Pertama, salah sumber Termux. Ini paling sering. Sudah capek debug, ternyata akar masalahnya dari aplikasi awal.
 
-Kedua, lupa reload shell setelah install. Akhirnya saat ketik `hermes`, muncul `command not found`. Bukan karena gagal install total, tapi karena shell belum refresh.
+>Kedua, lupa reload shell setelah install. Akhirnya saat ketik `hermes`, muncul `command not found`. Bukan karena gagal install total, tapi karena shell belum refresh.
 
-Ketiga, buru-buru lanjut padahal `pkg upgrade` belum selesai bersih. Kalau ada paket yang belum tuntas, efeknya bisa muncul di langkah berikutnya dan kelihatan seperti error Hermes, padahal bukan.
+>Ketiga, buru-buru lanjut padahal `pkg upgrade` belum selesai bersih. Kalau ada paket yang belum tuntas, efeknya bisa muncul di langkah berikutnya dan kelihatan seperti error Hermes, padahal bukan.
 
 ## Penutup
 
