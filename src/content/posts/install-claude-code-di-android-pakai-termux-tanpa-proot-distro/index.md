@@ -29,10 +29,10 @@ Panduan ini nuntun install Claude Code CLI di Android murni lewat Termux  tanpa 
 - Claude Code CLI di-install dan dikonfigurasi
 - Command `claude` siap dipake langsung dari terminal
 
-**Peringatan penting:**
-- Jangan pernah `pkg upgrade nodejs` atau `apt upgrade` yang ganti Node.js bawaan Termux  ini bakal bikin Claude break karena beda ABI.
-- Selalu update Claude lewat `oa update` atau npm dengan PATH yang udah diset ke wrapper OpenClaw.
-- Ini bukan cara resmi dari Anthropic atau Termux. Bisa aja break pas update besar.
+> [!WARNING] **Peringatan penting:**
+>- Jangan pernah `pkg upgrade nodejs` atau `apt upgrade` yang ganti Node.js bawaan Termux  ini bakal bikin Claude break karena beda ABI.
+>- Selalu update Claude lewat `oa update` atau npm dengan PATH yang udah diset ke wrapper OpenClaw.
+>- Ini bukan cara resmi dari Anthropic atau Termux. Bisa aja break pas update besar.
 
 ---
 
