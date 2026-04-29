@@ -1,6 +1,7 @@
 ---
 title: Install Claude Code di Android Pakai Termux (tanpa proot-distro)
 published: 2026-04-29
+updated: 2026-04-29
 description: Panduan ini nuntun install Claude Code CLI di Android murni lewat
   Termux  tanpa root, tanpa proot-distro.
 image: install-claudecode-di-android-termux-tanpa-proot-distro.png
@@ -18,11 +19,11 @@ draft: false
 pinned: false
 comment: true
 ---
-## Apa yang bakal di-Build?
+## Kita langsung ke inti pembahasan
 
 Panduan ini nuntun install Claude Code CLI di Android murni lewat Termux  tanpa root, tanpa proot-distro. Triknya pakai glibc linker dari OpenClaw yang bikin binary Linux biasa bisa jalan di lingkungan Termux.
 
-**Yang bakal kejadian:**
+**Yang bakal kita lakukan:**
 - Termux di-setup dari nol
 - Runtime glibc dipasang buat jalanin binary Linux
 - Claude Code CLI di-install dan dikonfigurasi
