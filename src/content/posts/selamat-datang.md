@@ -1,14 +1,18 @@
 ---
 title: Halo, Ini Gilanx Cheetz
 published: 2026-04-29
-description: Tulisan pembuka buat blog pribadi yang dibangun dengan Astro dan Firefly.
+updated: 2026-04-29
+description: Tulisan pembuka buat blog pribadi yang dibangun dengan Cloudflare.
+  thx Cloudflare 🙏
 image: gilanx-cheetz.png
 tags:
   - Blog
-  - Astro
   - Catatan
 category: Catatan
+lang: id
+author: Gilanx Cheetz
 draft: false
+comment: true
 ---
 Halo, selamat datang.
 
