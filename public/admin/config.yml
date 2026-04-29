@@ -2,6 +2,8 @@ backend:
   name: github
   repo: gilanx04/blog
   branch: main
+  base_url: https://gilanx-decap-oauth.glng.workers.dev
+  auth_endpoint: auth
 
 local_backend: true
 
