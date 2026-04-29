@@ -135,8 +135,10 @@ const siteLang = lang.replace("_", "-");
         <meta name="keywords" content={siteConfig.keywords.join(", ")} />
       )
     }
-    {["/admin/", "/search/"].includes(Astro.url.pathname) && (
+    {["/admin/", "/search/"].includes(Astro.url.pathname) ? (
       <meta name="robots" content="noindex" />
+    ) : (
+      <meta name="robots" content="index, follow" />
     )}
     <meta name="author" content={profileConfig.name} />
 
