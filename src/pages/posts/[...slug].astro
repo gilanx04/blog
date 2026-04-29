@@ -110,22 +110,42 @@ if (posterAvatarUrl) {
 
 dayjs.extend(utc);
 
+const postUrl = Astro.url.href;
+const coverImage = processedImage && processedImage.startsWith("http")
+	? processedImage
+	: processedImage && processedImage.startsWith("/")
+		? siteConfig.site_url + processedImage
+		: siteConfig.site_url + "/assets/images/cover.avif";
+
 const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "BlogPosting",
+	"@id": postUrl,
 	headline: entry.data.title,
 	description: entry.data.description || entry.data.title,
+	image: coverImage,
 	keywords: entry.data.tags,
 	author: {
 		"@type": "Person",
 		name: profileConfig.name,
-		url: Astro.site,
+		url: siteConfig.site_url,
+	},
+	publisher: {
+		"@type": "Person",
+		name: profileConfig.name,
+		url: siteConfig.site_url,
 	},
 	datePublished: formatDateToYYYYMMDD(entry.data.published),
+	dateModified: entry.data.updated
+		? formatDateToYYYYMMDD(entry.data.updated)
+		: formatDateToYYYYMMDD(entry.data.published),
+	mainEntityOfPage: {
+		"@type": "WebPage",
+		"@id": postUrl,
+	},
 	inLanguage: entry.data.lang
 		? entry.data.lang.replace("_", "-")
 		: siteConfig.lang.replace("_", "-"),
-	// TODO include cover image here
 };
 
 const relatedPosts = await getRelatedPosts(entry, 5);
@@ -250,6 +270,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
               id="post-cover"
               src={processedImage}
               basePath={getFileDirFromPath(entry.filePath || '')}
+              alt={entry.data.title}
               class="mb-8 rounded-xl banner-container onload-animation"
               preview={false}
               apiUrls={apiUrls}

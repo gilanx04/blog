@@ -10,21 +10,21 @@ export const siteConfig: SiteConfig = {
 	title: "Gilanx Cheetz",
 
 	// 站点副标题
-	subtitle: "Catatan santai soal web, belajar, dan hal yang lagi dikerjakan",
+	subtitle: "Tutorial Termux, Claude Code, dan Catatan Belajar AI",
 
 	// 站点 URL
 	site_url: "https://gilanx.pages.dev",
 
 	// 站点描述
 	description:
-		"Blog pribadi buat nyimpan catatan, ide, dan dokumentasi kecil seputar web dan hal yang lagi saya pelajari.",
+		"Blog tutorial Termux, Claude Code, dan belajar AI yang selalu diperbarui. Panduan praktis dari dasar hingga mahir, dengan contoh nyata dan tips terbaru.",
 
 	// 站点关键词
 	keywords: [
-		"Firefly",
-		"Fuwari",
-		"Astro",
-		"ACGN",
+		"Gilanx Cheetz",
+		"Termux",
+		"Claude Code",
+		"AI",
 		"blog",
 		"teknologi",
 		"catatan",

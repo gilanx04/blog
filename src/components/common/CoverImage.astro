@@ -134,9 +134,8 @@ const remoteReferrerPolicy =
 		</div>
 	)}
 
-	<!-- 错误提示（覆盖在回退图片上） -->
-	<div class="error-message absolute inset-0 flex items-center justify-center z-20 hidden pointer-events-none">
-		<span class="text-white text-sm px-3 py-1 rounded bg-black/50">Image API Error</span>
+	<!-- 错误时显示回退图片（无错误提示文字） -->
+	<div class="error-overlay absolute inset-0 flex items-center justify-center z-20 hidden pointer-events-none">
 	</div>
 
 	<!-- 回退图片（错误时显示） -->
@@ -236,9 +235,9 @@ const remoteReferrerPolicy =
 		display: none;
 	}
 
-	/* 错误状态显示错误信息和回退图片 */
-	.cover-image-container[data-error="true"] .error-message {
-		display: flex;
+	/* 错误状态显示回退图片 */
+	.cover-image-container[data-error="true"] .error-overlay {
+		display: none;
 	}
 
 	.cover-image-container[data-error="true"] .fallback-image {

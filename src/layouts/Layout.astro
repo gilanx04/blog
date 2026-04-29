@@ -140,6 +140,30 @@ const siteLang = lang.replace("_", "-");
     )}
     <meta name="author" content={profileConfig.name} />
 
+    <link rel="canonical" href={Astro.url.pathname === '/' ? siteConfig.site_url + '/' : Astro.url.href} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": siteConfig.site_url + "#website",
+          "url": siteConfig.site_url,
+          "name": siteConfig.title,
+          "description": siteConfig.description,
+          "inLanguage": siteConfig.lang,
+          "publisher": { "@id": siteConfig.site_url + "#person" },
+        },
+        {
+          "@type": "Person",
+          "@id": siteConfig.site_url + "#person",
+          "name": profileConfig.name,
+          "url": siteConfig.site_url,
+          "sameAs": profileConfig.links.filter(l => !l.url.startsWith("mailto:")).map(l => l.url),
+        },
+      ],
+    })} />
+
     <meta property="og:site_name" content={siteConfig.title} />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={pageTitle} />
@@ -148,6 +172,9 @@ const siteLang = lang.replace("_", "-");
       content={description || siteConfig.description || pageTitle}
     />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    {
+      !ogImageUrl && <meta property="og:image" content={siteConfig.site_url + "/assets/images/cover.avif"} />
+    }
     {
       setOGTypeArticle ? (
         <meta property="og:type" content="article" />
