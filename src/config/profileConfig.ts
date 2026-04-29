@@ -9,10 +9,10 @@ export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.avif",
 
 	// 名字
-	name: "Gilang",
+	name: "Gilanx Cheetz",
 
 	// 个人签名
-	bio: "Halo, saya Gilang. Lagi belajar, ngoprek, dan nulis hal yang kepikiran.",
+	bio: "Halo, saya Gilanx. Lagi belajar, ngoprek, dan nulis hal yang kepikiran.",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
