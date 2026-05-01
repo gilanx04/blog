@@ -1,5 +1,6 @@
 ---
 title: Surat untuk Satu Tahun yang Tidak Pernah Mudah
+slug: surat-untuk-satu-tahun-yang-tidak-pernah-mudah
 published: 2026-04-29
 updated: 2026-04-29
 description: Sebelum mulai ngetik ini, baiknya aku jujur. Cerita ini dari sudut
