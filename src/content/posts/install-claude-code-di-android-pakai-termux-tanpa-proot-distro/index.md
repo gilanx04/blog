@@ -1,5 +1,5 @@
 ---
-title: Install Claude Code di Android Pakai Termux (tanpa proot-distro)
+title: Install Claude Code Android Tanpa proot-distro
 published: 2026-04-29
 updated: 2026-04-29
 description: Panduan ini nuntun install Claude Code CLI di Android murni lewat

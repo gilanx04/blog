@@ -1,4 +1,4 @@
-# Tentang Saya
+## Tentang Saya
 
 Halo, saya **Gilang**. Blog ini jadi tempat saya nyimpan catatan, eksperimen, dan tulisan ngoprek biar gampang dicari lagi nanti.
 

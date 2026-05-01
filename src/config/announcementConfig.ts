@@ -5,7 +5,8 @@ export const announcementConfig: AnnouncementConfig = {
 	title: "Pengumuman",
 
 	// 公告内容
-	content: "Selamat datang. Di sini saya nyimpan catatan, eksperimen, dan tulisan ringan soal hal yang lagi dipelajari.",
+	content:
+		"Selamat datang. Di sini saya nyimpan catatan, eksperimen, dan tulisan ringan soal hal yang lagi dipelajari.",
 
 	// 是否允许用户关闭公告
 	closable: true,

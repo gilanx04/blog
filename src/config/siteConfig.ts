@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
 	title: "Gilanx Cheetz",
 
 	// 站点副标题
-	subtitle: "Tutorial Termux, Claude Code, dan Catatan Belajar AI",
+	subtitle: "Tutorial Termux & Claude Code Android",
 
 	// 站点 URL
 	site_url: "https://gilanx.pages.dev",

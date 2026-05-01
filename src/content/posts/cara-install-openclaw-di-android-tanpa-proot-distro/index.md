@@ -1,9 +1,7 @@
 ---
 title: Cara Install OpenClaw di Android Tanpa proot-distro
 published: 2026-04-29
-description: Pernah nggak sih mau coba OpenClaw di hp Android tapi langsung
-  gregetan karena harus install Linux lengkap lewat proot-distro yang makan
-  ruang storage sampe hampir 1GB?
+description: Panduan install OpenClaw di Android tanpa proot-distro, lebih ringan dari distro Linux penuh dan cocok buat Termux di HP.
 image: cara-install-openclaw-di-android-tanpa-proot-distro.png
 tags:
   - AI

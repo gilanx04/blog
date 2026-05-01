@@ -56,8 +56,7 @@ export const id: Translation = {
 	[Key.friendsDescription]:
 		"Beberapa teman dan situs yang menarik buat dikunjungi.",
 	[Key.guestbook]: "Buku Tamu",
-	[Key.guestbookDescription]:
-		"Tinggalkan pesan, ide, atau saranmu di sini.",
+	[Key.guestbookDescription]: "Tinggalkan pesan, ide, atau saranmu di sini.",
 	[Key.untitled]: "Tanpa Judul",
 	[Key.uncategorized]: "Tanpa Kategori",
 	[Key.noTags]: "Tanpa Tag",
@@ -163,7 +162,8 @@ export const id: Translation = {
 	[Key.rssWhatIsRSSDescription]:
 		"RSS membantu kamu mengikuti update dari banyak situs tanpa perlu mengecek satu per satu.",
 	[Key.rssBenefit1]: "Tahu ada tulisan baru tanpa membuka situs manual",
-	[Key.rssBenefit2]: "Langganan dari banyak situs bisa dikumpulkan di satu tempat",
+	[Key.rssBenefit2]:
+		"Langganan dari banyak situs bisa dikumpulkan di satu tempat",
 	[Key.rssBenefit3]: "Tulisan penting jadi lebih kecil kemungkinan terlewat",
 	[Key.rssBenefit4]: "Baca jadi lebih bersih dan fokus",
 	[Key.rssHowToUse]:
