@@ -15,14 +15,14 @@ collections:
     label: Tulisan
     label_singular: Tulisan
     folder: src/content/posts
-    path: "{{slug}}/index"
+    path: "{{fields.slug}}/index"
     identifier_field: slug
     media_folder: ""
     public_folder: ""
     create: true
     extension: md
     format: frontmatter
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     summary: "{{title}} - {{published}}"
     fields:
       - label: Judul
