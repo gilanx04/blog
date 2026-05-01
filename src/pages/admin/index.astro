@@ -13,5 +13,36 @@ const cmsScriptUrl = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
 	</head>
 	<body>
 		<script src={cmsScriptUrl}></script>
+		<script is:inline>
+			window.addEventListener("load", () => {
+				const { CMS, createClass, h } = window;
+				if (!CMS || !createClass || !h) return;
+
+				const PostPreview = createClass({
+					render() {
+						const entry = this.props.entry;
+						const title = entry.getIn(["data", "title"]);
+						const slug = entry.getIn(["data", "slug"]);
+						const description = entry.getIn(["data", "description"]);
+						const image = entry.getIn(["data", "image"]);
+						const imageUrl = image && this.props.getAsset(image).toString();
+						const body = this.props.widgetFor("body");
+
+						return h(
+							"article",
+							{ className: "post-preview" },
+							imageUrl && h("img", { className: "post-preview__image", src: imageUrl, alt: "" }),
+							h("p", { className: "post-preview__slug" }, slug || "slug-url"),
+							h("h1", { className: "post-preview__title" }, title || "Judul tulisan"),
+							description && h("p", { className: "post-preview__description" }, description),
+							h("div", { className: "post-preview__body" }, body),
+						);
+					},
+				});
+
+				CMS.registerPreviewStyle("/admin/preview.css");
+				CMS.registerPreviewTemplate("posts", PostPreview);
+			});
+		</script>
 	</body>
 </html>
