@@ -111,11 +111,12 @@ if (posterAvatarUrl) {
 dayjs.extend(utc);
 
 const postUrl = Astro.url.href;
-const coverImage = processedImage && processedImage.startsWith("http")
-	? processedImage
-	: processedImage && processedImage.startsWith("/")
-		? siteConfig.site_url + processedImage
-		: siteConfig.site_url + "/assets/images/cover.avif";
+const coverImage =
+	processedImage && processedImage.startsWith("http")
+		? processedImage
+		: processedImage && processedImage.startsWith("/")
+			? siteConfig.site_url + processedImage
+			: siteConfig.site_url + "/assets/images/cover.avif";
 
 const jsonLd = {
 	"@context": "https://schema.org",
@@ -143,6 +144,8 @@ const jsonLd = {
 		"@type": "WebPage",
 		"@id": postUrl,
 	},
+	isAccessibleForFree: true,
+	...(entry.data.sourceLink ? { citation: entry.data.sourceLink } : {}),
 	inLanguage: entry.data.lang
 		? entry.data.lang.replace("_", "-")
 		: siteConfig.lang.replace("_", "-"),

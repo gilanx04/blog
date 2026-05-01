@@ -23,13 +23,22 @@
 
       .anchor-icon {
         @apply mx-[0.45ch]!;
+
+        &::before {
+          content: "#";
+        }
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       .anchor {
         @apply opacity-100!;
       }
+    }
+
+    .anchor:focus-visible {
+      @apply opacity-100!;
     }
   }
 

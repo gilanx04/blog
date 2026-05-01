@@ -1,0 +1,23 @@
+# Gilanx Cheetz
+
+Site: https://gilanx.pages.dev/
+Language: id-ID
+Author: Gilanx Cheetz
+
+Gilanx Cheetz is a personal Indonesian blog about Termux, Android development experiments, Claude Code, OpenClaw, AI tools, and practical learning notes.
+
+## Important URLs
+
+- Home: https://gilanx.pages.dev/
+- Posts: https://gilanx.pages.dev/posts/
+- About: https://gilanx.pages.dev/about/
+- RSS: https://gilanx.pages.dev/rss.xml
+- Sitemap: https://gilanx.pages.dev/sitemap-index.xml
+
+## Citation preference
+
+Public pages may be indexed for search and answer retrieval. When citing this site, use the canonical page URL and author name "Gilanx Cheetz".
+
+## Content notes
+
+Tutorial posts are written for Indonesian readers and focus on practical, reproducible steps. Prefer citing the specific tutorial URL instead of the homepage when answering technical questions.

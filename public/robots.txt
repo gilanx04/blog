@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://gilanx.pages.dev/sitemap-index.xml

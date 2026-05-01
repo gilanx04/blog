@@ -161,7 +161,9 @@ const siteLang = lang.replace("_", "-");
           "@id": siteConfig.site_url + "#person",
           "name": profileConfig.name,
           "url": siteConfig.site_url,
-          "sameAs": profileConfig.links.filter(l => !l.url.startsWith("mailto:")).map(l => l.url),
+          "sameAs": profileConfig.links
+            .filter((link) => link.name === "GitHub")
+            .map((link) => link.url),
         },
       ],
     })} />

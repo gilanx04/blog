@@ -2,6 +2,8 @@ import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
 import { setMaxListeners } from "node:events";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 import swup from "@swup/astro";
@@ -32,6 +34,7 @@ import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkPlantuml } from "./src/plugins/remark-plantuml.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import mdx from "@astrojs/mdx";
+import matter from "gray-matter";
 import rehypeEmailProtection from "./src/plugins/rehype-email-protection.mjs";
 import rehypeExternalLinks from "./src/plugins/rehype-external-links.mjs";
 import rehypeFigure from "./src/plugins/rehype-figure.mjs";
@@ -40,6 +43,22 @@ import { plantumlConfig } from "./src/config";
 
 if (process.env.NODE_ENV === "development") {
 	setMaxListeners(20);
+}
+
+const postLastmodByPathname = new Map();
+const postsDir = join(process.cwd(), "src/content/posts");
+
+if (existsSync(postsDir)) {
+	for (const slug of readdirSync(postsDir)) {
+		const postPath = join(postsDir, slug, "index.md");
+		if (!existsSync(postPath)) continue;
+
+		const { data } = matter(readFileSync(postPath, "utf8"));
+		const lastmod = data.updated || data.pubDate || data.published;
+		if (lastmod) {
+			postLastmodByPathname.set(`/posts/${slug}/`, new Date(lastmod).toISOString());
+		}
+	}
 }
 
 // https://astro.build/config
@@ -192,6 +211,12 @@ export default defineConfig({
 
 				return true;
 			},
+			serialize: (item) => {
+				const pathname = new URL(item.url).pathname;
+				const lastmod = postLastmodByPathname.get(pathname);
+
+				return lastmod ? { ...item, lastmod } : item;
+			},
 		}),
 		mdx(),
 	],
@@ -230,20 +255,17 @@ export default defineConfig({
 					behavior: "append",
 					properties: {
 						className: ["anchor"],
+						ariaLabel: "Link to this section",
 					},
 					content: {
 						type: "element",
 						tagName: "span",
 						properties: {
 							className: ["anchor-icon"],
+							"aria-hidden": "true",
 							"data-pagefind-ignore": true,
 						},
-						children: [
-							{
-								type: "text",
-								value: "#",
-							},
-						],
+						children: [],
 					},
 				},
 			],
