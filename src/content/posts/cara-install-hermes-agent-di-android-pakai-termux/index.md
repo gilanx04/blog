@@ -1,5 +1,6 @@
 ---
 title: Cara Install Hermes Agent di Android pakai Termux
+slug: cara-install-hermes-agent-di-android-pakai-termux
 published: 2026-04-28
 updated: 2026-04-29
 description: Kemarin ada yang nyeletuk ke aku, "Hermes Agent bisa jalan di
